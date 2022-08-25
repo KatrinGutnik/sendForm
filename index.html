@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.cdnfonts.com/css/chillax" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="div form">
+    <form action="" id="form" class="form__body">
+        <h1 class="form__title">Some text</h1>
+        <div class="form__item">
+            <label for="formName" class="form__label">Name</label>
+            <input id="formName" type="text" name="someName" class="form__input _req"> <!---->
+        </div>
+        <div class="form__item">
+            <label for="formEmail" class="form__label">Email</label>
+            <input id="formEmail" type="text" name="someEmail" class="form__input _req _email"> <!--add class from js-->
+        </div>
+        <div class="form__item">
+            <div class="form__label">Left or Right</div>
+            <div class="options">
+                <div class="options__item">
+                    <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input"> <!--checked поск это радио кнопка то один из вариантов дб отмечен, использ чекд -->
+                    <label for="formRightHanded" class="options__label"><span>Right</span></label>
+                </div>
+                <div class="options__item">
+                    <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                    <label for="formLeftHanded" class="options__label"><span>Left</span></label>
+                </div>
+            </div>
+            <div class="form__item">
+                <label for="formMessage" class="form__label">Message</label>
+                <textarea name="Massage" id="formMessage" class="form__input"></textarea>
+            </div>
+            <div class="form__item">
+                <div class="form__label">Age</div>
+                <select name="age" class="select">
+                    <option value="18 - 25" selected>Young</option>
+                    <option value="25 - 45">Old</option>
+                    <option value="45 - 80">Very Old</option>
+                </select>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="form__label">Add Photo</div>
+            <div class="file">
+                <div class="file__item">
+                    <input id="formImage" accept=".jpg, .png, .jpeg, .gif" type="file" name="image" class="file__input">
+                    <div class="file__button">Select</div>
+                </div>
+                <div id="formPreview" class="file__preview"></div> <!--add id formPrewiev-->
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="checkbox">
+                <input type="checkbox" name="agreement" class="checkbox__input _req">
+                <label for="formAgreement" class="checkbox__label"><span>I agreement with you</span></label>
+            </div>
+        </div>
+        <button type="submit" class="form__button">Send</button>
+    </form>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
